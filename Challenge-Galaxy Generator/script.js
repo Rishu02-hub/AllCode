@@ -7,5 +7,5 @@ function galaxy() {
 }
 
 function galaxy_del() {
-    document.getElementById('flex-gen').innerHTML='sdsd';
+    document.getElementById('flex-gen').innerHTML='';
 }
