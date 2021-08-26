@@ -295,5 +295,98 @@ function rpsFrontEnd(humanImg, botImg, finalMessage) {
 
 // 4:
 
+let all_buttons = document.getElementsByTagName('button');
+console.log(all_buttons);
 
+let copyAllButtons = [];
+for(let i = 0; i<all_buttons.length; i++){
+    copyAllButtons.push(all_buttons[i].classList[1]);
+}
+
+console.log(copyAllButtons);
+
+
+
+function buttonColourChange(buttonThing) {
+    if(buttonThing.value == 'red') {
+        buttonsRed();
+    } else if(buttonThing.value == 'green') {
+        buttonGreen();
+    } else if(buttonThing.value == 'reset') {
+        buttonColourReset();
+    } else if (buttonThing.value == 'random') {
+        randomColour();
+    } else if (buttonThing.value == 'blue') {
+        buttonsBlue();
+    } else if (buttonThing.value == 'yellow') {
+        buttonsYellow();
+    } else if (buttonThing.value == 'noColour') {
+        buttonNoColour();
+    }
+}
+
+
+function buttonsRed() {
+    for (let i = 0; i< all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add('btn-danger');
+    }
+}
+
+function buttonGreen() {
+    for (let i = 0; i< all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add('btn-success');
+    }
+    
+}
+
+function buttonsBlue() {
+    for (let i = 0; i< all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add('btn-primary');
+    }
+    
+}
+
+function buttonsYellow() {
+    for (let i = 0; i< all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add('btn-warning');
+    }
+    
+}
+
+
+
+function buttonNoColour() {
+    for (let i = 0; i< all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        
+    }
+    
+}
+
+function buttonColourReset() {
+    for (let i = 0; i< all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add(copyAllButtons[i]);
+    }
+    
+}
+
+function randomColour() {
+    let choice_colour = ['btn-primary', 'btn-danger', 'btn-success', 'btn-warning'];
+    
+    for(let i = 0; i<all_buttons.length; i++) {
+        var randomNum = Math.floor(Math.random() * 4);
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add(choice_colour[randomNum]);
+
+    }
+    
+}
+
+
+// 5:
 
