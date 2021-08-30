@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    background: #222;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(230, 123, 30);
+}
+
+.logo {
+    border-radius: 15px 15px 15px 15px;
+}
