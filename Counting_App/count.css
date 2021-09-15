@@ -1,0 +1,21 @@
+#add,
+#lower {
+    border-radius: 360px;
+    font-size: 20px;
+}
+
+.number_count {
+    font-size: 150px;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.count_container {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to right, rgb(253, 169, 12), rgb(247, 247, 33));
+}

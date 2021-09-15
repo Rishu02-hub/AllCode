@@ -2,7 +2,7 @@
 //document.getElementById('sometext').innerHTML = age;
 
 //var num1=5.7;
-console.log(5*10);
+console.log(5 * 10);
 
 //var name=prompt('what is your name');
 
@@ -35,19 +35,19 @@ while (num <100) {
 }*/
 
 // For Loop
-for (let num=0; num<=100; num++) {
+for (let num = 0; num <= 100; num++) {
     console.log(num);
 }
 
 
 // Data Types 
-let yourAge=13;                                 // Number
-let yourName = 'Rishith';                       // String
-let names = {first: 'Rishith', last: 'Mathur'}; // object
-let truth = true;                               // Boolean
-let shopping = ['apple', 'banana', 'orange'];   // Array
-let random;                                     // Undefined
-let nothing = null;                             // Value null
+let yourAge = 13; // Number
+let yourName = 'Rishith'; // String
+let names = { first: 'Rishith', last: 'Mathur' }; // object
+let truth = true; // Boolean
+let shopping = ['apple', 'banana', 'orange']; // Array
+let random; // Undefined
+let nothing = null; // Value null
 
 // String in JAvascript (common methods)
 let fruit = 'banana';
@@ -60,18 +60,18 @@ console.log(fruit.replace('ban', '123'));
 console.log(fruit.toUpperCase());
 console.log(fruit.toLowerCase());
 console.log(fruit.charAt(2));
-console.log(fruit.split(','));  // split by a comma
-console.log(fruit.split(''));   // split by a character
+console.log(fruit.split(',')); // split by a comma
+console.log(fruit.split('')); // split by a character
 
 
 // Array 
 let fruits = ['banana', 'apple', 'orange', 'pineapple'];
 fruits = new Array('banana', 'apple', 'orange', 'pineapple');
 
-console.log(fruits[2-1])  // access value at index 2nd
+console.log(fruits[2 - 1]) // access value at index 2nd
 
-for (let i =0; i < fruits.length; i++)
-console.log(fruits[i]);
+for (let i = 0; i < fruits.length; i++)
+    console.log(fruits[i]);
 
 
 // array common methods
@@ -79,36 +79,39 @@ console.log(fruits[i]);
 console.log('to string ', fruits.toString());
 console.log(fruits.join(' - '));
 console.log(fruits.pop(), fruits); // removes last item of array or list
-console.log(fruits.push('blackberries'), fruits);  // appends(adds to the list)
-console.log(fruits[4]); 
+console.log(fruits.push('blackberries'), fruits); // appends(adds to the list)
+console.log(fruits[4]);
 fruits[4] = 'new fruit';
 console.log(fruits);
 console.log(fruits.shift(), fruits); // removes first item of array or list
-fruits.unshift('pear');  // add's first item to the array or list
+fruits.unshift('pear'); // add's first item to the array or list
 console.log(fruits);
 
 let vegetable = ['brocoli', 'tomato', 'asparagus'];
 let allGroceries = fruits.concat(vegetable);
 console.log(allGroceries);
 console.log(allGroceries.slice(1, 4));
-console.log(allGroceries.reverse());  // reverses the array
-console.log(allGroceries.sort());  // Sorted a stringed array alphabetically
-let alphabet = ['q', 'r', 't', 'f', 'h', 'b', 'n', 'c',];
+console.log(allGroceries.reverse()); // reverses the array
+console.log(allGroceries.sort()); // Sorted a stringed array alphabetically
+let alphabet = ['q', 'r', 't', 'f', 'h', 'b', 'n', 'c', ];
 console.log(alphabet.sort());
 
 
 let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
-console.log(someNumbers.sort())  /* sorted the number array to the smallest
+console.log(someNumbers.sort())
+    /* sorted the number array to the smallest
 number to the largest number but the number which the computer saw was the
  first number of the numbers in the array */
-console.log(someNumbers.sort(function(a, b) {return a-b})); /*sorted the 
+console.log(someNumbers.sort(function(a, b) { return a - b }));
+/*sorted the 
 number array to accending order*/
 
-console.log(someNumbers.sort(function(a, b) {return b-a})); /*sorted the 
+console.log(someNumbers.sort(function(a, b) { return b - a }));
+/*sorted the 
 number array to decending order*/
 
 let emptyArray = [];
-for (let num = 0; num <=10; num++) {
+for (let num = 0; num <= 10; num++) {
     emptyArray.push(num);
 }
 
@@ -121,11 +124,11 @@ console.log(emptyArray);
 // Dictionaries in Python
 
 let student = {
-    first: 'Rishth', 
-    last: 'Mathur', 
-    age: 13, 
+    first: 'Rishth',
+    last: 'Mathur',
+    age: 13,
     height: 170,
-    studentInfo: function () {
+    studentInfo: function() {
         return this.first + '\n' + this.last + "\n" + this.age;
     }
 };
@@ -143,7 +146,7 @@ console.log(student.studentInfo());
 
 let age = 45;
 
-if ((age >=18) && (age <= 35)) {
+if ((age >= 18) && (age <= 35)) {
     status = 'target demo';
     console.log(status);
 } else {
@@ -164,7 +167,7 @@ day 4 --> Thursday --> Weekday
 
 */
 
-switch(2) {
+switch (2) {
     case 0:
         text = 'Weekend';
         break;
@@ -187,12 +190,12 @@ console.log(text);
 // 1:
 function ageInDays() {
     let birthYear = prompt('What year were you born in: ');
-    let ageDays = (2021 -birthYear) * 365;
-    let textAnswer = document.createTextNode('You are '+ ageDays+' days old');
+    let ageDays = (2021 - birthYear) * 365;
+    let textAnswer = document.createTextNode('You are ' + ageDays + ' days old');
     let h1 = document.createElement('h1');
     h1.setAttribute('id', 'ageInDays');
     h1.appendChild(textAnswer);
-    document.getElementById('flex-box-result-2').append(h1)
+    document.getElementById('flex-box-result-2').append(h1);
 }
 
 
@@ -212,7 +215,7 @@ function galaxy() {
 }
 
 function galaxy_del() {
-    document.getElementById('flex-gen').innerHTML='';
+    document.getElementById('flex-gen').innerHTML = '';
 }
 
 // 3:
@@ -222,7 +225,7 @@ function rpsGame(yourChoice) {
     let humanChoice, botChoice;
     humanChoice = yourChoice.id;
     botChoice = numberToChoice(randToRpsInt());
-    console.log('Computer Choice '+botChoice);
+    console.log('Computer Choice ' + botChoice);
     let results = decideWinner(humanChoice, botChoice);
     console.log(results);
     let message = finalMessage(results); // 'you won
@@ -240,9 +243,9 @@ function numberToChoice(number) {
 
 function decideWinner(yourChoice, computerChoice) {
     let rpsDataBase = {
-        'rock': {'scissors': 1, 'rock': 0.5, 'paper': 0},
-        'paper': {'rock': 1,'paper': 0.5, "scissors": 0},
-        'scissors': {'rock': 0, 'paper': 1, 'scissors': 0.5}
+        'rock': { 'scissors': 1, 'rock': 0.5, 'paper': 0 },
+        'paper': { 'rock': 1, 'paper': 0.5, "scissors": 0 },
+        'scissors': { 'rock': 0, 'paper': 1, 'scissors': 0.5 }
     };
 
     let youScore = rpsDataBase[yourChoice][computerChoice];
@@ -254,13 +257,13 @@ function decideWinner(yourChoice, computerChoice) {
 
 function finalMessage([youScore, computerScore]) {
     if (youScore === 0) {
-        return {'message': 'You lost!', 'color': 'red'};
-    } else if (youScore===0.5) {
-       return {'message': 'You tied!', 'color': 'yellow'};
-    } else  {
-        return {'message': 'You won!', 'color': 'green'};
-    } 
-    
+        return { 'message': 'You lost!', 'color': 'red' };
+    } else if (youScore === 0.5) {
+        return { 'message': 'You tied!', 'color': 'yellow' };
+    } else {
+        return { 'message': 'You won!', 'color': 'green' };
+    }
+
 }
 
 function rpsFrontEnd(humanImg, botImg, finalMessage) {
@@ -281,9 +284,9 @@ function rpsFrontEnd(humanImg, botImg, finalMessage) {
     let botDiv = document.createElement('div');
     let messageDiv = document.createElement('div');
     console.log(imagesDatabase[humanImg]);
-    
+
     humanDiv.innerHTML = "<img src='" + imagesDatabase[humanImg] + "' height=150 width=150 style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);'>"
-    messageDiv. innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding: 30px; '>" + finalMessage['message'] + "</h1>"
+    messageDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding: 30px; '>" + finalMessage['message'] + "</h1>"
     botDiv.innerHTML = "<img src='" + imagesDatabase[botImg] + "' height=150 width=150 style='box-shadow: 0px 10px 50px rgba(243, 38, 24, 1);'>"
 
     document.getElementById('flex-rps-div').appendChild(humanDiv);
@@ -302,7 +305,7 @@ let all_buttons = document.getElementsByTagName('button');
 console.log(all_buttons);
 
 let copyAllButtons = [];
-for(let i = 0; i<all_buttons.length; i++){
+for (let i = 0; i < all_buttons.length; i++) {
     copyAllButtons.push(all_buttons[i].classList[1]);
 }
 
@@ -311,11 +314,11 @@ console.log(copyAllButtons);
 
 
 function buttonColourChange(buttonThing) {
-    if(buttonThing.value == 'red') {
+    if (buttonThing.value == 'red') {
         buttonsRed();
-    } else if(buttonThing.value == 'green') {
+    } else if (buttonThing.value == 'green') {
         buttonGreen();
-    } else if(buttonThing.value == 'reset') {
+    } else if (buttonThing.value == 'reset') {
         buttonColourReset();
     } else if (buttonThing.value == 'random') {
         randomColour();
@@ -330,74 +333,74 @@ function buttonColourChange(buttonThing) {
 
 
 function buttonsRed() {
-    for (let i = 0; i< all_buttons.length; i++) {
+    for (let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add('btn-danger');
     }
 }
 
 function buttonGreen() {
-    for (let i = 0; i< all_buttons.length; i++) {
+    for (let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add('btn-success');
     }
-    
+
 }
 
 function buttonsBlue() {
-    for (let i = 0; i< all_buttons.length; i++) {
+    for (let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add('btn-primary');
     }
-    
+
 }
 
 function buttonsYellow() {
-    for (let i = 0; i< all_buttons.length; i++) {
+    for (let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add('btn-warning');
     }
-    
+
 }
 
 
 
 function buttonNoColour() {
-    for (let i = 0; i< all_buttons.length; i++) {
+    for (let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
-        
+
     }
-    
+
 }
 
 function buttonColourReset() {
-    for (let i = 0; i< all_buttons.length; i++) {
+    for (let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add(copyAllButtons[i]);
     }
-    
+
 }
 
 function randomColour() {
     let choice_colour = ['btn-primary', 'btn-danger', 'btn-success', 'btn-warning'];
-    
-    for(let i = 0; i<all_buttons.length; i++) {
+
+    for (let i = 0; i < all_buttons.length; i++) {
         var randomNum = Math.floor(Math.random() * 4);
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add(choice_colour[randomNum]);
 
     }
-    
+
 }
 
 
 // 5:
 
-let blackjackGame= {
-    'you': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score': 0},
-    'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score': 0},
+let blackjackGame = {
+    'you': { 'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score': 0 },
+    'dealer': { 'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score': 0 },
     'cards': ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'K', 'J', 'Q', 'A'],
-    'cardsMap': {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9, '10':10, 'K':10, 'J':10, 'Q':10, 'A': [1, 11]},
+    'cardsMap': { '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'K': 10, 'J': 10, 'Q': 10, 'A': [1, 11] },
 };
 
 const YOU = blackjackGame['you'];
@@ -407,7 +410,7 @@ const hitSound = new Audio('C:/Users/ashish.f.mathur/Ashish/rishith/challenges/s
 
 
 document.querySelector('#blackjack-hit-button').addEventListener('click', blackjackHit);
-document.querySelector('#blackjack-deal-button').addEventListener('click',blackjackDeal);
+document.querySelector('#blackjack-deal-button').addEventListener('click', blackjackDeal);
 
 function blackjackHit() {
     let card = randomCard();
@@ -424,45 +427,45 @@ function randomCard() {
 }
 
 function showCard(card, activePlayer) {
-    if(activePlayer['score'] <= 21) {
+    if (activePlayer['score'] <= 21) {
         let cardImage = document.createElement('img');
         cardImage.src = `C:/Users/ashish.f.mathur/Ashish/rishith/challenges/images/${card}.png`;
-        document.querySelector(activePlayer['div']).appendChild(cardImage); 
+        document.querySelector(activePlayer['div']).appendChild(cardImage);
         hitSound.play();
     }
 
 }
 
 
- function blackjackDeal() {
+function blackjackDeal() {
     let yourImages = document.querySelector('#your-box').querySelectorAll('img');
     let dealerImages = document.querySelector('#dealer-box').querySelectorAll('img');
-    for(i=0; i<yourImages.length; i++) {
+    for (i = 0; i < yourImages.length; i++) {
         yourImages[i].remove();
     }
 
-    for(i=0; i<dealerImages.length; i++) {
+    for (i = 0; i < dealerImages.length; i++) {
         dealerImages[i].remove();
     }
- }
+}
 
 
 
- function updateScore(card, activePlayer) {
-     if (card === 'A') {
-     if(activePlayer['score'] + blackjackGame['cardsMap'][card][1] <= 21) {
-         activePlayer['score'] += blackjackGame['cardsMap'][card][1];
-     } else {
-         activePlayer['score'] += blackjackGame['cardsMap'][0];
-     }
+function updateScore(card, activePlayer) {
+    if (card === 'A') {
+        if (activePlayer['score'] + blackjackGame['cardsMap'][card][1] <= 21) {
+            activePlayer['score'] += blackjackGame['cardsMap'][card][1];
+        } else {
+            activePlayer['score'] += blackjackGame['cardsMap'][0];
+        }
 
-     } else {
-         activePlayer['score'] += blackjackGame['cardsMap'][card];
-     }
+    } else {
+        activePlayer['score'] += blackjackGame['cardsMap'][card];
+    }
 
-    activePlayer['score']+= blackjackGame['cardsMap'][card];
- }
+    activePlayer['score'] += blackjackGame['cardsMap'][card];
+}
 
- function showScore(activePlayer) {
+function showScore(activePlayer) {
     document.querySelector(activePlayer['scoreSpan']).textContent = activePlayer['score'];
- }
+}

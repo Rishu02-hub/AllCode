@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+.addApp {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex: flex;
+}
+
+.flex-box-addApp {
+    flex: flex;
+}
+
+.addBtn {
+    margin: 17px;
+}
+
+.answer {
+    border: 1px solid black;
+}
+
+.equalBtn {
+    margin: 15px;
+}
