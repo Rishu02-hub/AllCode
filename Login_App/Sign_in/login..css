@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(to right, orange, rgb(245, 245, 11));
+}
+
+.title {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.input_username {
+    margin-bottom: 20px;
+}
+
+.input_password {
+    margin-top: 20px;
+}
+
+.login_box {
+    text-align: center;
+    border: 3px solid black;
+    margin: 200px;
+    padding: 20px;
+}
+
+.sign_in_buttons {
+    margin: 20px;
+}
+
+.sign_in_buttons>button {
+    margin-right: 20px;
+}
+
+input {
+    border-radius: 7px;
+}
+
+.new,
+.old {
+    text-decoration: none;
+    color: white;
+}
+
+.new:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.old:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.show {
+    margin-left: 13px;
+}
+
+#show {
+    margin-left: 13px;
+}
+
+#hide {
+    margin-left: 13px;
+}

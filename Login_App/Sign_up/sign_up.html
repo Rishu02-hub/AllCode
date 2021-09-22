@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script src="sign_up.js"></script>
+</head>
+
+<body>
+    <div class="sign_up_container">
+        <h1>Sign Up</h1>
+        <div class="input_username">
+            <input id="usernameId" class="usernameClass" type="text" placeholder="New Username">
+        </div>
+        <div class="input_password" id="input_password">
+            <input id="passwordId" class="passwordClass" type="password" placeholder="New Password">
+            <button class="btn btn-info show" id="show" onclick="show()">Show 👁️</button>
+        </div>
+        <!----------------------------------------------------------------------------------------------->
+        <!--Confirm Text-->
+        <!----------------------------------------------------------------------------------------------------------->
+        <div class="input_confirm_password" id="input_confirm_password">
+            <input id="confirmPasswordId" class="confirmPasswordClass" type="password" placeholder="Confirm New Password">
+            <button class="btn btn-info show" id="show_Confirm" onclick="showConfirm()">Show 👁️</button>
+        </div>
+
+        <div id="message" class="wrongMessage"></div>
+
+        <div class="sign_in_buttons" id="sign_in_buttons">
+            <button class="btn btn-success sign_up" id="signUpBtn" onclick="signUp()"><a class="new">Sign Up</a></button>
+            <button class="btn btn-danger sign_up" onclick="homepage()"><a class="old" href="C:\Users\ashish.f.mathur\Ashish\rishith\challenges\Login_App\Homepage\homepage.html">Return to Homepage</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

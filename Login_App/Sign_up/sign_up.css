@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, orange, rgb(245, 245, 11));
+}
+
+.title {
+    color: black;
+}
+
+.new,
+.old {
+    text-decoration: none;
+    color: white;
+}
+
+.new:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.old:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.sign_up {
+    margin: 10px;
+}
+
+.sign_up_container {
+    text-align: center;
+    border: 3px solid black;
+    margin: 200px;
+    padding: 20px;
+}
+
+input {
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.input_username {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input_password {
+    margin-top: 20px;
+}
+
+.input_confirm_password {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#message {
+    margin: 10px;
+}
+
+#signInButton {
+    margin-left: 20px;
+}
+
+#show {
+    margin-left: 13px;
+}
+
+#hide {
+    margin-left: 13px;
+}
+
+#show_Confirm {
+    margin-left: 13px;
+}
+
+#hide_Confirm {
+    margin-left: 13px;
+}

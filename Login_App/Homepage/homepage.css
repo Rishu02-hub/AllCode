@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(to right, orange, rgb(245, 245, 11));
+}
+
+.title {
+    color: black;
+}
+
+.homepage_container {
+    text-align: center;
+    margin: 200px;
+    padding: 20px;
+}
+
+.homepage_buttons {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.new,
+.old {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.new:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.old:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.old {
+    margin: 20px;
+}

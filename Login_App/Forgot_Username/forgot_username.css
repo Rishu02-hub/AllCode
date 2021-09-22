@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(to right, orange, rgb(245, 245, 11));
+}
+
+.title {
+    color: black;
+}
+
+.forgot_username_box {
+    text-align: center;
+    border: 3px solid black;
+    margin: 200px;
+    padding: 20px;
+}
+
+.newUsernameBtns {
+    margin: 30px;
+    padding: auto;
+}
+
+input {
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.new,
+.old {
+    text-decoration: none;
+    color: white;
+}
+
+.new:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.old:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.confirmNewUsernameClass {
+    margin-top: 20px;
+}
+
+.newUsernameClass {
+    margin-top: 20px;
+}
+
+.newUsername {
+    margin-right: 30px;
+}
+
+.WrongConfirmNewUsername {
+    margin-top: 20px;
+}
+
+#usernameChanged {
+    margin-top: 20px;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+#signInButton {
+    margin-left: 20px;
+}

@@ -1,0 +1,31 @@
+if (usernameSignUp == '') {
+        document.getElementById('usernameId').style.border = "2px solid red";
+        document.getElementById('passwordId').style.border = "2px solid red";
+        document.getElementById('confirmPasswordId').style.border = "2px solid red";
+        message.style.border = "2px solid red";
+        message.style.color = "red";
+        message.innerText = "Please fill the text fields";
+        //append(message);
+        return
+    }
+    if (password === '') {
+        document.getElementById('usernameId').style.border = "2px solid red";
+        document.getElementById('passwordId').style.border = "2px solid red";
+        document.getElementById('confirmPasswordId').style.border = "2px solid red";
+        message.style.border = "2px solid red";
+        message.style.color = "red";
+        message.innerText = "Please fill the text fields";
+
+        return
+    }
+    if (confirmPassword === '') {
+        document.getElementById('usernameId').style.border = "2px solid red";
+        document.getElementById('passwordId').style.border = "2px solid red";
+        document.getElementById('confirmPasswordId').style.border = "2px solid red";
+        message.style.border = "2px solid red";
+        message.style.color = "red";
+        message.innerText = "Please fill the text fields";
+
+        //append(message);
+        return
+}
