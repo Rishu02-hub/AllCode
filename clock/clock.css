@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #3b8d99, #203a43, #10101E)
+}
+
+.clockContainer {
+    /*Temporary:*/
+    justify-content: center;
+    text-align: center;
+    margin-top: 275px;
+}
+
+.clock_type_btns {
+    margin-top: 45px;
+}
+
+button {
+    border-radius: 11.5px;
+    background-color: rgb(18, 131, 223);
+}
+
+.analog,
+.digital {
+    font-size: 1.75rem;
+    border-radius: 14px;
+}
+
+.digital_link,
+.analog_link {
+    text-decoration: none;
+    color: white;
+}
+
+.analog {
+    margin-right: 10px;
+}
+
+.digital {
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 2.75rem;
+}
+
+.digital_link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.analog_link:hover {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,46 @@
+let loc = document.getElementById('location');
+let tempIcon = document.getElementById('temp-icon');
+let tempValue = document.getElementById('temp-value');
+let climate = document.getElementById('climate');
+let iconFile;
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+
+
+window.addEventListener('load', () => {
+    let long;
+    let lat;
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            long = position.coords.longitude;
+            lat = position.coords.latitude;
+            const proxy = "https://cors-anywhere.herokuapp.com";
+
+            const api = `https://api.weatherapi.com/v1/current.json?key=28fd4a4f0e78436ca78231538212309&q=Australia&aqi=no`;
+            fetch(api).then((response) => {
+                return response.json();
+            })
+
+            .then(data => {
+                const { name } = data;
+                const { feels_like } = data.main;
+                const { id, main } = data.weather[0];
+                document.getElementById('location_p').innerText = name;
+                document.getElementById('pClimate').innerText = main;
+                document.getElementById('temp-value').innerText = Math.round(feels_like - 273);
+            })
+        })
+    }
+})
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------- API---------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+${proxy}/api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=85844d97fff5bd2fb2edb8098a5a60a4

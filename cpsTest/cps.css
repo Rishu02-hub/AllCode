@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cps_container {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.cpsBoard {
+    background-color: rgb(66, 180, 66);
+    width: 350px;
+    font-size: 0.9rem;
+    margin-left: 450px;
+    margin-top: 200px;
+    padding: 100px;
+    height: 300px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    justify-content: center;
+    text-align: center;
+}
+
+.clickMessage {
+    margin-top: 100px;
+}

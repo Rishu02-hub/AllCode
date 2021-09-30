@@ -3,7 +3,7 @@ function rpsGame(yourChoice) {
     let humanChoice, botChoice;
     humanChoice = yourChoice.id;
     botChoice = numberToChoice(randToRpsInt());
-    console.log('Computer Choice '+botChoice);
+    console.log('Computer Choice ' + botChoice);
     let results = decideWinner(humanChoice, botChoice);
     console.log(results);
     let message = finalMessage(results); // 'you won
@@ -21,9 +21,9 @@ function numberToChoice(number) {
 
 function decideWinner(yourChoice, computerChoice) {
     let rpsDataBase = {
-        'rock': {'scissors': 1, 'rock': 0.5, 'paper': 0},
-        'paper': {'rock': 1,'paper': 0.5, "scissors": 0},
-        'scissors': {'rock': 0, 'paper': 1, 'scissors': 0.5}
+        'rock': { 'scissors': 1, 'rock': 0.5, 'paper': 0 },
+        'paper': { 'rock': 1, 'paper': 0.5, "scissors": 0 },
+        'scissors': { 'rock': 0, 'paper': 1, 'scissors': 0.5 }
     };
 
     let youScore = rpsDataBase[yourChoice][computerChoice];
@@ -35,13 +35,13 @@ function decideWinner(yourChoice, computerChoice) {
 
 function finalMessage([youScore, computerScore]) {
     if (youScore === 0) {
-        return {'message': 'You lost!', 'color': 'red'};
-    } else if (youScore===0.5) {
-       return {'message': 'You tied!', 'color': 'yellow'};
-    } else  {
-        return {'message': 'You won!', 'color': 'green'};
-    } 
-    
+        return { 'message': 'You lost!', 'color': 'red' };
+    } else if (youScore === 0.5) {
+        return { 'message': 'You tied!', 'color': 'yellow' };
+    } else {
+        return { 'message': 'You won!', 'color': 'green' };
+    }
+
 }
 
 function rpsFrontEnd(humanImg, botImg, finalMessage) {
@@ -62,14 +62,18 @@ function rpsFrontEnd(humanImg, botImg, finalMessage) {
     let botDiv = document.createElement('div');
     let messageDiv = document.createElement('div');
     console.log(imagesDatabase[humanImg]);
-    
+
     humanDiv.innerHTML = "<img src='" + imagesDatabase[humanImg] + "' height=150 width=150 style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);'>"
-    messageDiv. innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding: 30px; '>" + finalMessage['message'] + "</h1>"
+    messageDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding: 30px; '>" + finalMessage['message'] + "</h1>"
     botDiv.innerHTML = "<img src='" + imagesDatabase[botImg] + "' height=150 width=150 style='box-shadow: 0px 10px 50px rgba(243, 38, 24, 1);'>"
 
     document.getElementById('flex-rps-div').appendChild(humanDiv);
     document.getElementById('flex-rps-div').appendChild(messageDiv);
     document.getElementById('flex-rps-div').appendChild(botDiv);
 
-
+    let resetDiv = document.createElement('div');
+    let resetBtn = document.createElement('button');
+    resetBtn.setAttribute('class', 'btn btn-danger');
+    resetBtn.setAttribute('id', 'resetBtn');
+    resetDiv.appendChild(resetBtn);
 }
