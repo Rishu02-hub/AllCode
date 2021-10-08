@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.displayKeys {
+    height: inherit;
+    border: 1.5px solid black;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+}
+
+.keyboardGrid {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* text-transform: capitalize; */
+}
+
+.key {
+    padding: 10px;
+    width: 50px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keyBackspace {
+    padding: 10px;
+    width: 145px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keyDeleteAll {
+    padding: 10px;
+    width: 145px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keyTab {
+    padding: 10px;
+    width: 95px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keyCapsLock {
+    padding: 10px;
+    width: 145px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keyEnter {
+    padding: 10px;
+    width: 95px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keySpaceBar {
+    padding: 10px;
+    width: 595px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keySpecialCharacters {
+    padding: 10px;
+    width: 95px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}

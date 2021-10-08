@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cps Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="cps.css">
     <script src="cps.js" defer></script>
 </head>
@@ -17,8 +18,12 @@
         <button class="cpsBoard" id="cpsBoard" onclick="checkCps()">
             <span class="clickMessage" id="clickMessage">Click here as fast as possible!</span>
         </button>
-        <div class="timer" id="timer"></div>
-        <div class="counter" id="counter"></div>
+        <div class="restartBtn" id="restartBtn"></div>
+        <div class="timerCounterScore" id="timerCounterScore">
+            <div class="timer" id="timer"></div>
+            <div class="counter" id="counter"></div>
+            <div class="score" id="score"></div>
+        </div>
     </div>
 </body>
 

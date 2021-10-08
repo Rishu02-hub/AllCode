@@ -34,3 +34,15 @@
 .clickMessage {
     margin-top: 100px;
 }
+
+.timer,
+.counter,
+.score {
+    width: fit-content;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.timerCounterScore {
+    margin-bottom: 400px;
+}

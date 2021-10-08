@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <title>Keyboard</title>
+    <script src="keyboard.js" defer></script>
+</head>
+
+<body>
+    <div class="keyboardContainer">
+        <h1>Your own virtual keyboard</h1>
+
+        <div style="margin: 20px;" class="displayKeys" id="displayKeys"></div>
+
+        <div class="keyboardGrid">
+            <button class="key" id="key" onclick="displayKeyLeftKeyTo1()" data-key_`>`</button>
+            <button class="key" id="key" onclick="displayKey1()" data-key_1>1</button>
+            <button class="key" id="key" onclick="displayKey2()" data-key_2>2</button>
+            <button class="key" id="key" onclick="displayKey3()" data-key_3>3</button>
+            <button class="key" id="key" onclick="displayKey4()" data-key_4>4</button>
+            <button class="key" id="key" onclick="displayKey5()" data-key_5>5</button>
+            <button class="key" id="key" onclick="displayKey6()" data-key_6>6</button>
+            <button class="key" id="key" onclick="displayKey7()" data-key_7>7</button>
+            <button class="key" id="key" onclick="displayKey8()" data-key_8>8</button>
+            <button class="key" id="key" onclick="displayKey9()" data-key_9>9</button>
+            <button class="key" id="key" onclick="displayKey0()" data-key_0>0</button>
+            <button class="key" id="key" onclick="displayKeyMinus()" data-key_->-</button>
+            <button class="key" id="key" onclick="displayKeyEqual()" data-key_+>=</button>
+            <button class="keyBackspace" id="key" onclick="displayKeyBackspace()" data-key_backspace>Backspace</button>
+            <br>
+            <!--Letter Keys-->
+            <button class="keyTab" id="key" onclick="displayKeyTab()" data-key_q>Tab</button>
+            <button class="key" id="q" onclick="displayKeyq()" data-key_q>q</button>
+            <button class="key" id="w" onclick="displayKeyw()" data-key_w>w</button>
+            <button class="key" id="e" onclick="displayKeye()" data-key_e>e</button>
+            <button class="key" id="r" onclick="displayKeyr()" data-key_r>r</button>
+            <button class="key" id="t" onclick="displayKeyt()" data-key_t>t</button>
+            <button class="key" id="y" onclick="displayKeyY()" data-key_y>y</button>
+            <button class="key" id="u" onclick="displayKeyu()" data-key_u>u</button>
+            <button class="key" id="i" onclick="displayKeyi()" data-key_i>i</button>
+            <button class="key" id="o" onclick="displayKeyo()" data-key_o>o</button>
+            <button class="key" id="p" onclick="displayKeyp()" data-key_p>p</button>
+            <button class="key" id="key" onclick="displayKeySquareBrackets()" data-key_[>[</button>
+            <button class="key" id="key" onclick="displayKeySquareBracketsOpposite()" data-key_]>]</button>
+            <button class="key" id="key" onclick="displayKeyBackSlash()" data-key_\>\</button>
+            <br>
+            <button class="keyCapsLock" id="key" onclick="displayKeyCapsLock()" data-key_CapsLock>Caps Lock</button>
+            <button class="key q" id="a" onclick="displayKeya()" data-key_a>a</button>
+            <button class="key" id="s" onclick="displayKeyS()" data-key_s>s</button>
+            <button class="key" id="d" onclick="displayKeyd()" data-key_d>d</button>
+            <button class="key" id="f" onclick="displayKeyf()" data-key_f>f</button>
+            <button class="key" id="g" onclick="displayKeyg()" data-key_g>g</button>
+            <button class="key" id="h" onclick="displayKeyh()" data-key_h>h</button>
+            <button class="key" id="j" onclick="displayKeyj()" data-key_j>j</button>
+            <button class="key" id="k" onclick="displayKeyk()" data-key_k>k</button>
+            <button class="key" id="l" onclick="displayKeyl()" data-key_l>l</button>
+            <button class="key" id="key" onclick="displayKeySemiColon()" data-key_;>;</button>
+            <button class="key" id="key" onclick="displayKeySingleApostrophe()" data-key_‛>‛</button>
+            <button class="keyEnter" id="key" onclick="displayKeyEnter()" data-key_enter>Enter</button>
+            <br>
+            <button class="key" id="z" onclick="displayKeyz()" data-key_z>z</button>
+            <button class="key" id="x" onclick="displayKeyx()" data-key_x>x</button>
+            <button class="key" id="c" onclick="displayKeyc()" data-key_c>c</button>
+            <button class="key" id="v" onclick="displayKeyv()" data-key_v>v</button>
+            <button class="key" id="b" onclick="displayKeyb()" data-key_b>b</button>
+            <button class="key" id="n" onclick="displayKeyn()" data-key_n>n</button>
+            <button class="key" id="m" onclick="displayKeym()" data-key_n>m</button>
+            <button class="key" id="key" onclick="displayKeyComma()" data-key_,>,</button>
+            <button class="key" id="key" onclick="displayKeyFullStop()" data-key_.>.</button>
+            <button class="key" id="key" onclick="displayKeyForwardSlash()" data-key_forwardSlash>/</button>
+            <button class="key" id="key" onclick="displayKeyLessThan()" data-key_forwardSlash>&#60;</button>
+            <button class="key" id="key" onclick="displayKeyUp()" data-key_forwardSlash>&#708;</button>
+            <button class="key" id="key" onclick="displayKeyDown()" data-key_forwardSlash>&#8964;</button>
+            <button class="key" id="key" onclick="displayKeyGreaterThan()" data-key_forwardSlash>&#62;</button>
+            <br>
+            <a class="keySpecialCharactersLink" id="key" href="/keyboard/specialCharactersLink/specialCharacters.html"><button class="keySpecialCharacters" id="key" onclick="displayKeySpecialCharacters()" data-key_spaceBar>+#${)</button></a>
+            <button class="keySpaceBar" id="key" onclick="displayKeySpaceBar()" data-key_spaceBar></button>
+            <button class="keyDeleteAll" id="key" onclick="displayKeyDeleteAll()" data-key_DeleteAll>Delete All</button>
+        </div>
+
+</body>
+
+</html>
