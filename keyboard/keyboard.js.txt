@@ -86,3 +86,136 @@
         n = "n";
         m = "m";
     }*/
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <title>Virtual Keyboard</title>
+</head>
+
+<body>
+    <div class="keyboardContainer">
+
+        <h1>Your own virtual keyboard!!</h1>
+        <br>
+        <div class="colourPickerDiv" id="colorPickerDiv">
+            <h4 class="titleColourPicker" id="titleColourPicker">Pick your favourite colour for the virtual keyboard ---></h4>
+            <input type="color" value="#ffffff" id="colourPickerInput" class="colourPickerInput" onchange="changeColour()">
+            <button class="btn btn-success" id='changeColourBtn' onclick="checkDarknessOfColour()">Change Colour</button>
+        </div>
+        <br>
+        <div style="margin: 20px;" class="displayKeys" id="displayKeys"></div>
+        <div class="keyboardGrid">
+            <button class="key" id="LeftKeyTo1Shift" onclick="displayKeyLeftKeyTo1Shift()" data-key_~>~</button>
+            <button class="key" id="exclaimationMark" onclick="displayKeyExclaimationMark()" data-key_!>!</button>
+            <button class="key" id="@Sign" onclick="displayKeyCommercialAt()" data-key_@>@</button>
+            <button class="key" id="hashtag" onclick="displayKeyHashtag()" data-key_#>#</button>
+            <button class="key" id="dollarSign" onclick="displayKeyDollarSign()" data-key_$>$</button>
+            <button class="key" id="percentage" onclick="displayKeyPercent()" data-key_%>%</button>
+            <button class="key" id="power" onclick="displayKeyPower()" data-key_^>^</button>
+            <button class="key" id="andSymbol" onclick="displayKeyAndSymbol()" data-key_&>&</button>
+            <button class="key" id="multiplicationSymbol" onclick="displayKeyMultiplicationSymbol()" data-key_*>*</button>
+            <button class="key" id="openingBrackets" onclick="displayKeyOpeningBrackets()" data-key_(>(</button>
+            <button class="key" id="closingBrackets" onclick="displayKeyClosingBrackets()" data-key_)>)</button>
+            <button class="key" id="underscore" onclick="displayKeyUnderscore()" data-key__>_</button>
+            <button class="key" id="additionSymbol" onclick="displayKeyAdditionSymbol()" data-key_+>+</button>
+            <br>
+            <button class="key" id="LeftKeyTo1" onclick="displayKeyLeftKeyTo1()" data-key_`>`</button>
+            <button class="key" id="keyNumber1" onclick="displayKey1()" data-key_1>1</button>
+            <button class="key" id="keyNumber2" onclick="displayKey2()" data-key_2>2</button>
+            <button class="key" id="keyNumber3" onclick="displayKey3()" data-key_3>3</button>
+            <button class="key" id="keyNumber4" onclick="displayKey4()" data-key_4>4</button>
+            <button class="key" id="keyNumber5" onclick="displayKey5()" data-key_5>5</button>
+            <button class="key" id="keyNumber6" onclick="displayKey6()" data-key_6>6</button>
+            <button class="key" id="keyNumber7" onclick="displayKey7()" data-key_7>7</button>
+            <button class="key" id="keyNumber8" onclick="displayKey8()" data-key_8>8</button>
+            <button class="key" id="keyNumber9" onclick="displayKey9()" data-key_9>9</button>
+            <button class="key" id="keyNumber0" onclick="displayKey0()" data-key_0>0</button>
+            <button class="key" id="keyMinus" onclick="displayKeyMinus()" data-key_->-</button>
+            <button class="key" id="keyEqual" onclick="displayKeyEqual()" data-key_+>=</button>
+            <button class="keyBackspace" id="keyBackspace" onclick="displayKeyBackspace()" data-key_backspace>Backspace</button>
+            <br>
+            <!--Letter Keys-->
+            <button class="keyTab" id="keyTab" onclick="displayKeyTab()" data-key_q>Tab</button>
+            <button class="key" id="q" onclick="displayKeyq()" data-key_q>q</button>
+            <button class="key" id="w" onclick="displayKeyw()" data-key_w>w</button>
+            <button class="key" id="e" onclick="displayKeye()" data-key_e>e</button>
+            <button class="key" id="r" onclick="displayKeyr()" data-key_r>r</button>
+            <button class="key" id="t" onclick="displayKeyt()" data-key_t>t</button>
+            <button class="key" id="y" onclick="displayKeyY()" data-key_y>y</button>
+            <button class="key" id="u" onclick="displayKeyu()" data-key_u>u</button>
+            <button class="key" id="i" onclick="displayKeyi()" data-key_i>i</button>
+            <button class="key" id="o" onclick="displayKeyo()" data-key_o>o</button>
+            <button class="key" id="p" onclick="displayKeyp()" data-key_p>p</button>
+            <button class="key" id="keySquareBrackets" onclick="displayKeySquareBrackets()" data-key_[>[</button>
+            <button class="key" id="keySquareBracketsOpposite" onclick="displayKeySquareBracketsOpposite()" data-key_]>]</button>
+            <button class="key" id="keyCurlyBrackets" onclick="displayKeyCurlyBrackets()" data-key_{>{</button>
+            <button class="key" id="keyCurlyBracketsOpposite" onclick="displayKeyCurlyBracketsOpposite()" data-key_}>}</button>
+            <button class="key" id="keyBackSlash" onclick="displayKeyBackSlash()" data-key_\>\</button>
+            <br>
+            <button class="keyCapsLock" id="keyCapsLock" onclick="displayKeyCapsLock()" data-key_CapsLock>Caps Lock</button>
+            <button class="key q" id="a" onclick="displayKeya()" data-key_a>a</button>
+            <button class="key" id="s" onclick="displayKeyS()" data-key_s>s</button>
+            <button class="key" id="d" onclick="displayKeyd()" data-key_d>d</button>
+            <button class="key" id="f" onclick="displayKeyf()" data-key_f>f</button>
+            <button class="key" id="g" onclick="displayKeyg()" data-key_g>g</button>
+            <button class="key" id="h" onclick="displayKeyh()" data-key_h>h</button>
+            <button class="key" id="j" onclick="displayKeyj()" data-key_j>j</button>
+            <button class="key" id="k" onclick="displayKeyk()" data-key_k>k</button>
+            <button class="key" id="l" onclick="displayKeyl()" data-key_l>l</button>
+            <button class="key" id="keySemiColon" onclick="displayKeySemiColon()" data-key_;>;</button>
+            <button class="key" id="colon" onclick="displayKeyColon()" data-key_:>:</button>
+            <button class="key" id="keySingleApostrophe" onclick="displayKeySingleApostrophe()" data-key_‛>‛</button>
+            <button class="key" id="doubleQuotes" onclick="displayKeyDoubleQuotes()" data-key_doubleQuotes>"</button>
+            <button class="keyEnter key" id="keyEnter" onclick="displayKeyEnter()" data-key_enter>Enter</button>
+            <br>
+            <button class="key" id="z" onclick="displayKeyz()" data-key_z>z</button>
+            <button class="key" id="x" onclick="displayKeyx()" data-key_x>x</button>
+            <button class="key" id="c" onclick="displayKeyc()" data-key_c>c</button>
+            <button class="key" id="v" onclick="displayKeyv()" data-key_v>v</button>
+            <button class="key" id="b" onclick="displayKeyb()" data-key_b>b</button>
+            <button class="key" id="n" onclick="displayKeyn()" data-key_n>n</button>
+            <button class="key" id="m" onclick="displayKeym()" data-key_n>m</button>
+            <button class="key" id="keyComma" onclick="displayKeyComma()" data-key_,>,</button>
+            <button class="key" id="keyFullStop" onclick="displayKeyFullStop()" data-key_.>.</button>
+            <button class="key" id="openHtmlTag" onclick="displayKeyOpenHtmlTag()" data-key_openHtmlTag>&#60;</button>
+            <button class="key" id="closingHtmlTag" onclick="displayKeyClosingHtmlTag()" data-key_closingHtmlTag>&#62;</button>
+            <button class="key" id="keyForwardSlash" onclick="displayKeyForwardSlash()" data-key_forwardSlash>/</button>
+            <button class="key" id="questionMark" onclick="displayKeyQuestionMark()" data-key_questionMark>?</button>
+            <button class="key" id="keyLessThan" onclick="displayKeyLessThan()" data-key_forwardSlash>&#8592;</button>
+            <button class="key" id="keyUp" onclick="displayKeyUp()" data-key_forwardSlash>&#8593;</button>
+            <button class="key" id="keyDown" onclick="displayKeyDown()" data-key_forwardSlash>&#8595;</button>
+            <button class="key" id="keyGreaterThan" onclick="displayKeyGreaterThan()" data-key_forwardSlash>&#8594;</button>
+            <br>
+            <button class="keySpaceBar key" id="keySpaceBar" onclick="displayKeySpaceBar()" data-key_spaceBar></button>
+            <button data-popup-target=".popup" class="keyDeleteAll key" id="keyDeleteAll">Delete All</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-header" id="popup-header">
+            <div class="title">Are you sure you want to delete all the text ?</div>
+            <button data-close-popup class="close-popup" id="close-popup">&times;</button>
+        </div>
+        <hr>
+        <div class="popup-body" id="popup-body">
+            <button class="yes_button" id="yes_button" onclick="yesButton()">Yes</button>
+            <button class="no_button" id="no_button" onclick="noButton()">No</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <script src="keyboard.js"></script>
+</body>
+
+</html>

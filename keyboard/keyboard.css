@@ -6,10 +6,16 @@
     box-sizing: border-box;
 }
 
+.customiseText {
+    font-size: 1.5rem;
+    margin-top: 100px;
+    margin-right: 900px;
+}
+
 .displayKeys {
+    font-size: 20px;
     height: inherit;
     border: 1.5px solid black;
-    text-align: left;
     padding: 10px;
     display: flex;
 }
@@ -18,7 +24,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* text-transform: capitalize; */
 }
 
 .key {
@@ -31,7 +36,6 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.95);
 }
 
@@ -45,8 +49,11 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.colourPickerInput {
+    background: none;
 }
 
 .keyDeleteAll {
@@ -59,19 +66,20 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.95);
 }
 
 button {
+    border: 2px solid black;
+    cursor: pointer;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.95);
+    background-color: white;
 }
 
-.keyTab {
+.keyTab,
+.keyShift {
     padding: 10px;
     width: 95px;
     height: 55px;
@@ -81,7 +89,6 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.95);
 }
 
@@ -95,7 +102,6 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.95);
 }
 
@@ -109,8 +115,7 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.95);
+    box-shadow: rgba(0, 0, 0, 20);
 }
 
 .keySpaceBar {
@@ -123,7 +128,6 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.95);
 }
 
@@ -137,6 +141,156 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: white;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.titleColourPicker {
+    display: flex;
+    height: inherit;
+    margin-right: 20px;
+}
+
+.colourPickerDiv {
+    display: flex;
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.colourPickerInput {
+    cursor: pointer;
+    border: none;
+}
+
+h1,
+h4 {
+    text-align: center;
+}
+
+body {
+    user-select: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-header .close-popup {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.popup-body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.yes_button,
+.no_button {
+    height: 60px;
+    width: 175px;
+    text-align: center;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.yes_button {
+    background-color: rgb(4, 155, 4);
+    margin: 15px;
+    margin-top: 10px;
+}
+
+.no_button {
+    background-color: rgb(250, 31, 31);
+    margin: 15px;
+    margin-left: 40px;
+}
+
+.yes_button:hover {
+    background-color: rgb(1, 104, 1);
+}
+
+.no_button:hover {
+    background-color: rgb(175, 0, 0);
+}
+
+.keyGreaterThan,
+.keyDown,
+.keyLessThan {
+    padding: 10px;
+    width: 95px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.95);
+}
+
+.keyUp {
+    padding: 10px;
+    width: 65px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     box-shadow: rgba(0, 0, 0, 0.95);
 }
